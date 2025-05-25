@@ -1,3 +1,5 @@
+package algorithm;
+
 class IntQueue {
     private int max;
     private int front;

@@ -1,3 +1,5 @@
+package algorithm;
+
 class IntStack {
     private int[] stk;
 
