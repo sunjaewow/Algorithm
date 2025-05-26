@@ -1,6 +1,6 @@
 package algorithm;
 
-public class EightQueen {
+public class EightQueenV1 {
 
     static boolean[] flag = new boolean[8];
     static int[] pos = new int[8];
