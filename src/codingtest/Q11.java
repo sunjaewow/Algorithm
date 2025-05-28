@@ -5,8 +5,8 @@ class Q11 {
         int[] answer = new int[2];
         int lcd = lcd(denom1, denom2);
 
-        int a = numer1 * (lcd / denom1);
-        int b = numer2 * (lcd / denom2);
+        int a = numer1 * lcd / denom1;
+        int b = numer2 * lcd / denom2;
         int sum = a + b;
 
         int gcd = gcd(sum, lcd);
@@ -14,8 +14,6 @@ class Q11 {
         answer[1] = lcd / gcd;
 
         return answer;
-
-
     }
 
     private int gcd(int x, int y) {
@@ -30,4 +28,5 @@ class Q11 {
     private int lcd(int x, int y) {
         return x * y / gcd(x, y);
     }
+
 }
